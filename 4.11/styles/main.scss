@@ -1,0 +1,46 @@
+$border: 2px solid red;
+.grid-container{
+    display: grid;
+   
+     &.title{
+         grid-area: title;
+         border:#{$border};
+    }
+     &.main-pic{
+         grid-area: pic;
+         border:#{$border};
+     }
+     &.menu{
+         grid-area: menu;
+         border:#{$border};
+     }
+     &.info{
+         grid-area: info;
+         border:#{$border};
+     } 
+     grid-template-areas: 
+    "info info info"
+    "pic"
+     "menu"
+     "title";
+     grid-template-columns: 30% 30% 30%;
+     grid-template-rows: 100px 400px 100px 5fr;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    height: 70px;
+    width: 100%;
+  }
+  .nav button{
+    height:60px;
+    width: 100px;
+    border: 1px solid rgb(28, 200, 223);
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(18, 84, 182), rgb(83, 160, 233));
+    text-align: center;
+    vertical-align: auto;
+    box-shadow: 2px 5px 1px 0px;
+    margin: 5px;
+  }

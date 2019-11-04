@@ -1,0 +1,68 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "info info info" "pic" "menu" "title";
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  -ms-grid-rows: 100px 400px 100px 5fr;
+      grid-template-rows: 100px 400px 100px 5fr;
+}
+
+.grid-container.title {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: title;
+  border: 2px solid red;
+}
+
+.grid-container.main-pic {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: pic;
+  border: 2px solid red;
+}
+
+.grid-container.menu {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  border: 2px solid red;
+}
+
+.grid-container.info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: info;
+  border: 2px solid red;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 70px;
+  width: 100%;
+}
+
+.nav button {
+  height: 60px;
+  width: 100px;
+  border: 1px solid #1cc8df;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#1254b6), to(#53a0e9));
+  background: linear-gradient(to right, #1254b6, #53a0e9);
+  text-align: center;
+  vertical-align: auto;
+  -webkit-box-shadow: 2px 5px 1px 0px;
+          box-shadow: 2px 5px 1px 0px;
+  margin: 5px;
+}
+/*# sourceMappingURL=main.css.map */
